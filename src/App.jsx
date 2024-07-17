@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Hello from "./components/Hello";
 import Fruits from "./components/Fruits";
+import ConditionalComponent from "./components/ConditionalComponent";
 
 function App() {
   const seatNumbers = [1, 2, 3, 4, 5];
@@ -8,15 +9,9 @@ function App() {
   return (
     <>
       <div className="App">
-        <Hello
-          name="Ghassan"
-          message="Hello there!"
-          emoji="hi"
-          seatNumbers={seatNumbers}
-        />
-
-        <Hello name="Awdali" message="Hello Where!" />
+        <ConditionalComponent />
       </div>
+
       <div>
         <Fruits></Fruits>
       </div>
