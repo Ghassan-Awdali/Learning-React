@@ -1,4 +1,5 @@
 import React from "react";
+import Fruit from "./Fruit";
 
 const Fruits = () => {
   //const fruits = ["Apple", "Mango", "Banananannanana", "Chocolate"];
@@ -12,10 +13,12 @@ const Fruits = () => {
     <div>
       <ul>
         {fruits.map((fruit) => (
-          <li key={fruit}>
-            {" "}
-            {fruit.name} {fruit.price} {fruit.emoji}
-          </li>
+          <Fruit
+            key={fruit.name}
+            name={fruit.name}
+            price={fruit.price}
+            emoji={fruit.emoji}
+          />
         ))}
       </ul>
     </div>
